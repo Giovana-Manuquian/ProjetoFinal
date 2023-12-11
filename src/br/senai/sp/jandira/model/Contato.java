@@ -2,9 +2,7 @@ package br.senai.sp.jandira.model;
 
 public class Contato {
     private int id;
-    private long telefone;
-    private String nome, email, foto;
-    private boolean favorito;
+    private String nome, email, foto, telefone, favorito;
 
     public int getId() {
         return id;
@@ -14,11 +12,11 @@ public class Contato {
         this.id = id;
     }
 
-    public long getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(long telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -46,11 +44,11 @@ public class Contato {
         this.foto = foto;
     }
 
-    public boolean isFavorito() {
+    public String isFavorito() {
         return favorito;
     }
 
-    public void setFavorito(boolean favorito) {
+    public void setFavorito(String favorito) {
         this.favorito = favorito;
     }
 }

@@ -12,7 +12,7 @@ public class Conexao {
         this.servidor = "127.0.0.1";
         this.banco = "db_contatos";
         this.usuario = "root";
-        this.senha = "bcd127";
+        this.senha = "12345";
     }
 
     public void connectDrive (){

@@ -3,6 +3,7 @@ package br.senai.sp.jandira;
 import br.senai.sp.jandira.controller.CadastrarContatos;
 import br.senai.sp.jandira.controller.ConsultarContatos;
 import br.senai.sp.jandira.controller.DeletarContato;
+//import br.senai.sp.jandira.controller.EditarContato;
 import br.senai.sp.jandira.view.Server;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
@@ -19,6 +20,7 @@ public class App {
         server.createContext("/contatosList", (HttpHandler) new ConsultarContatos());
         server.createContext("/deletarContato", (HttpHandler) new DeletarContato());
         server.createContext("/cadastrarContato", (HttpHandler) new CadastrarContatos());
+//        server.createContext("/editarContato", new EditarContato());
 
         server.setExecutor(null);
         server.start();

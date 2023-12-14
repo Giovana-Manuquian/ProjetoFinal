@@ -66,4 +66,28 @@ public class ContatosController {
             throw error; // rethrow the exception if needed
         }
     }
-}
+
+//    public void editarContato(Contato contatoAtualizado) throws SQLException {
+//        String queryEdicao = "UPDATE contatos SET nome=?, telefone=?, email=?, favorito=?, foto=? WHERE id=?";
+//
+//        try (PreparedStatement preparedStatement = connection.prepareStatement(queryEdicao)) {
+//            preparedStatement.setString(1, contatoAtualizado.getNome());
+//            preparedStatement.setString(2, contatoAtualizado.getTelefone());
+//            preparedStatement.setString(3, contatoAtualizado.getEmail());
+//            preparedStatement.setString(4, contatoAtualizado.isFavorito());
+//            preparedStatement.setString(5, contatoAtualizado.getFoto());
+//            preparedStatement.setInt(6, contatoAtualizado.getId());
+//
+//            int rowsUpdated = preparedStatement.executeUpdate();
+//
+//            if (rowsUpdated > 0) {
+//                System.out.println("Contato Editado com Sucesso!");
+//            } else {
+//                throw new SQLException("Nenhum contato foi atualizado. Verifique o ID do contato.");
+//            }
+//        } catch (SQLException error) {
+//            System.out.println("Erro ao editar contato: " + error.getMessage());
+//            throw error; // rethrow the exception if needed
+//        }
+    }
+
